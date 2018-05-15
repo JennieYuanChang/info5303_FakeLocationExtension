@@ -1,4 +1,6 @@
-
+/*
+@AUTHOR Yuan Chang
+*/
 
 import $ from 'jquery';
 

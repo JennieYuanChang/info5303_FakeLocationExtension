@@ -1,4 +1,6 @@
-
+/*
+@AUTHOR Yuan Chang
+*/
 
 // POPUP page is to display info - ask background page for info
 // background checks with chrome if the background page has previously stored info there 

@@ -55,7 +55,10 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var long = null;
+	var long = null; /*
+	                 @AUTHOR Yuan Chang
+	                 */
+	
 	var lati = null;
 	
 	function installFakeGeolocationCode() {
