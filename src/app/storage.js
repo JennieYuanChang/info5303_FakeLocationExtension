@@ -1,6 +1,4 @@
-/*
-@author: Yuan Chang
-*/
+
 
 //wrapped function for storing Chrome extension states
 function getChromeSync(key){

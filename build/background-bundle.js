@@ -67,10 +67,6 @@
 	
 	// This is the main router that handles requests from the popup and content scripts, sends the appropriate
 	// returns data if appropriate
-	/*
-	@author: Yuan Chang
-	*/
-	
 	chrome.runtime.onMessage.addListener( // chrome message api, add listener tells the background.jsx to attach a listener
 	function (request, sender, sendResponse) {
 	
@@ -10371,9 +10367,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	/*
-	@author: Yuan Chang
-	*/
+	
 	
 	//wrapped function for storing Chrome extension states
 	function getChromeSync(key) {
