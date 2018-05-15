@@ -1,5 +1,4 @@
-# sharext
-Chrome Extension front end for sharing project
+Chrome Extension for fake location.
 
-Todo:
-Delete item
+Please search “INFO 5303 fake location extension” in Chrome Store to download.
+
