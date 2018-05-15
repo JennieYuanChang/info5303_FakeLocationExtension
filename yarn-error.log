@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add --dev flow-bin
+
+PATH: 
+  /Users/yuanchang/.rvm/gems/ruby-2.4.2/bin:/Users/yuanchang/.rvm/gems/ruby-2.4.2@global/bin:/Users/yuanchang/.rvm/rubies/ruby-2.4.2/bin:/Users/yuanchang/software/anaconda/bin:/Users/yuanchang/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yuanchang/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "sharExt",
+    "version": "1.0.0",
+    "description": "",
+   // "main": "index.js",
+    "main": "lib/index.js",
+    "scripts": {
+      "dev": "webpack -d --watch",
+     // "build": "webpack -d",
+      "build": "babel src/ -d lib/",
+      "prepublish": "yarn run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "radium": "^0.18.1",
+      "react": "^15.3.2",
+      "react-dom": "^15.3.2",
+      "aphrodite": "^1.1.0",
+      "react-animations": "^0.1.0",
+      "babel-core": "^6.2.1",
+      "babel-loader": "^6.2.0",
+      "babel-preset-es2015": "^6.1.18",
+      "babel-preset-react": "^6.1.18",
+      "copy-webpack-plugin": "^4.0.1",
+      "cross-fetch": "^1.1.1",
+      "css-loader": "^0.28.9",
+      "jquery": "^3.1.1",
+      "react-redux": "^5.0.7",
+      "redux": "^3.7.2",
+      "webpack": "^1.12.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/yuanchang/Desktop/sharext/package.json: Unexpected token / in JSON at position 67
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+      at <anonymous>

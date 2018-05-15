@@ -1,0 +1,42 @@
+
+
+{
+  "name": "INFO 5303 fake location extension",
+  "description": "fake user location",
+  "version": "0.12",
+  "manifest_version": 2,
+  "icons": { "16": "icons/logo1.png", "128": "icons/logo1.png" },
+  "browser_action": {
+  "default_icon": "icons/logo1.png",
+  "default_popup": "popup.html"
+  },
+
+  "web_accessible_resources": [
+    "icons/logo1.png"
+  ], 
+
+  "permissions" : [
+    "declarativeContent",
+    "identity",
+    "notifications",
+    "storage",
+    "http://*/",
+    "http://127.0.0.1:8000/"
+  ],
+"background": {
+  "scripts": ["background-bundle.js"]
+  },
+    "content_scripts": [
+        {
+        "matches": ["*://*.amazon.com/gp/product*","*://*.amazon.com/*dp*"],
+        "js": ["content_amazon-bundle.js"],
+        "run_at": "document_end"         
+        },
+        {
+        "matches": ["*://*.amazon.com/*field-keywords*","*://*.amazon.com/*keywords*","*://*.amazon.com/s*","*://*.amazon.com/gp/search*"],
+        "js": ["content_amazon_search-bundle.js"],
+        "run_at": "document_end"         
+        }
+    ]
+   
+}
